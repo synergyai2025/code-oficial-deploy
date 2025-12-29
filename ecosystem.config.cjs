@@ -1,12 +1,12 @@
 module.exports = {
   apps: [
     {
-      name: "frontend-vite",
-      cwd: "/var/www/24/synergy_v24", // caminho do projeto
+      name: "frontend-v28",
+      cwd: "/var/www/28/v28", // caminho do projeto
       script: "npm",
-      args: "run preview -- --host 0.0.0.0 --port 4173",
+      args: "run preview -- --host 0.0.0.0 --port 4175",
 
-      // REMOVEMOS o "interpreter"
+      // REMOVI o "interpreter"
 
       env: {
         NODE_ENV: "production",
@@ -18,7 +18,8 @@ module.exports = {
       instances: 1,
       autorestart: true,
       watch: false,
-      max_memory_restart: "300M",
+      max_memory_restart: "512M",
     },
   ],
 };
+
